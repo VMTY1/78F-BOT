@@ -56,7 +56,7 @@ MESSAGE = """
 
 
 
-@Client.on_message(filters.private & filters.command(["sub"]))
+@Client.on_message(filters.private & filters.command(["join"]))
 async def sub(client, message):
     search = message.text           
     buttons = [[
