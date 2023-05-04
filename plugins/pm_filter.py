@@ -66,7 +66,7 @@ async def media(client, message):
 async def give_filter(client, message):
     userid = message.from_user.id
     content = message.reply_to_message
-#    content = message.text                                  
+    search = message.text                                  
     if LOGIN_CHANNEL and not await mute_login(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(LOGIN_CHANNEL))          
@@ -82,7 +82,7 @@ async def give_filter(client, message):
         
         k = await message.reply_photo(
             photo=random.choice(SP),
-            caption=f"👋 𝐇𝐞𝐥𝐥𝐨 {message.from_user.mention},\n\n{content} 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞..!!\n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 𝐌𝐲 '𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥' 𝐀𝐧𝐝 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐀𝐠𝐚𝐢𝐧. 😇",
+            caption=f"👋 𝐇𝐞𝐥𝐥𝐨 {message.from_user.mention},\n\n{search} 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞..!!\n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 𝐌𝐲 '𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥' 𝐀𝐧𝐝 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐀𝐠𝐚𝐢𝐧. 😇",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
