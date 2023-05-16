@@ -49,7 +49,7 @@ async def left(client,message):
 	else:
 	                 m = await message.reply_photo(
                          photo=(SP),
-                         caption=(START_TXT.format(message.from_user.mention)),
+                         caption=(f"translated from {fromt.capitalize()} to {to.capitalize()}\n\n```{translation.text}```", reply_markup=hehek, quote=True),
                          reply_markup=InlineKeyboardMarkup(
                                    [[
                                      InlineKeyboardButton('Close', callback_data="close_data"),
