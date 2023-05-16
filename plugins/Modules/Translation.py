@@ -16,7 +16,7 @@ async def left(client,message):
 		try:
 			lgcd = message.text.split("/tr")
 			lg_cd = lgcd[1].lower().replace(" ", "")
-			tr_text = message.reply_to_message.text
+			tr_text = message.text
 			translator = Translator()
 			translation = translator.translate(tr_text,dest = lg_cd)
 			hehek = InlineKeyboardMarkup(
