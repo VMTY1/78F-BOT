@@ -63,25 +63,21 @@
             "value": "-1001708959708",
             "required": false
         },
-
         "HRK_API": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "Telegram_files",
             "required": false
         },
-
         "HRK_APP_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "Telegram_files",
             "required": false
         },
-
         "LOGIN_CHANNEL": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "-1001708959708",
             "required": false
         },
-
         "PM": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "-1001203428484",
