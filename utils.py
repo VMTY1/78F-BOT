@@ -727,7 +727,7 @@ async def check_verification(bot, userid):
 
 
     async def get_tutorial(chat_id):
-    settings = await get_settings(chat_id) #fetching settings for group
+        settings = await get_settings(chat_id) #fetching settings for group
     if 'tutorial' in settings.keys():
         TUTORIAL_URL = settings['tutorial']
     else:
