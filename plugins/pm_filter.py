@@ -38,7 +38,13 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 SPELL_CHECK = {}
-
+BUTTON = {}
+# BUTTONS = {}
+FRESH = {}
+BUTTONS0 = {}
+BUTTONS1 = {}
+BUTTONS2 = {}
+# SPELL_CHECK = {}
 
 @Client.on_message(filters.group & filters.media)
 async def media(client, message):
@@ -2884,6 +2890,8 @@ async def auto_filter(client, msg, spoll=False):
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
     settings = await get_settings(message.chat.id)
+    key = f"{message.chat.id}-{message.id}"
+    FRESH[key] = search
     temp.SEND_ALL_TEMP[message.from_user.id] = files
     temp.KEYWORD[message.from_user.id] = search
     if 'is_shortlink' in settings.keys():
