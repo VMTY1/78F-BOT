@@ -8,6 +8,10 @@ import pytz
 from datetime import datetime, timedelta, date, time
 lock = asyncio.Lock()
 
+
+from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, SUPPORT_CHAT_ID, CUSTOM_FILE_CAPTION, MSG_ALRT, PICS, AUTH_GROUPS, P_TTI_SHOW_OFF, GRP_LNK, CHNL_LNK, NOR_IMG, LOG_CHANNEL, SPELL_IMG, MAX_B_TN, IMDB, \
+    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, NO_RESULTS_MSG, VERIFY, CUSTOM_QUERY_CAPTION, IMDB_DLT_TIME, FILE_FORWARD, FILE_CHANNEL, MAIN_CHANNEL, SP, LOGIN_CHANNEL, LANGUAGES, LOGIN_CHANNEL
+
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
