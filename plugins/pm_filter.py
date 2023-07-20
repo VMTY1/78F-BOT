@@ -1968,12 +1968,12 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
     else:
-        btbtn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-        ])
-           
-    else:
+#        btbtn.insert(0, [
+#            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
+#            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
+#        ])
+#           
+#    else:
         btn = []
     if offset != "":
         req = message.from_user.id if message.from_user else 0
