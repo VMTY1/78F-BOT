@@ -43,7 +43,7 @@ doodstream
 unshortenit
 mdisky
 ### googletrans==4.0.0-rc1 ###
-python-decouple
+### python-decouple ###
 ffmpeg-python>=0.2.0
 ytthumb
 YoutubeTags
